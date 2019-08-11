@@ -1,0 +1,17 @@
+{{#each FM}}
+
+  <div class="card card-body mb-2">
+        <h4>{{title}}</h4>
+    <p>Creation date: {{creationDate}}</p>
+
+<div style="display:flex; justify-content:space-between;"class="">
+
+    <a class="btn btn-dark  mb-2" style='background-color:#123C69; height:20%; width:49.5%; display:inline; float:left;' href="/FM/visit/{{id}}">Visit</a>
+    <a class="btn btn-dark  mb-2" style='background-color:#123C69; height:20%; width:49.5%; display:inline; float:right;' href="/FM/edit/{{id}}">Edit</a>
+  </div>
+<a style='margin-top:0.5rem;' class="btn btn-dark btn-block mb-2" href="/FM/delete/{{id}}">Delete</a>
+
+  </div>
+{{else}}
+  <p>No Code made so far</p>
+{{/each}}
